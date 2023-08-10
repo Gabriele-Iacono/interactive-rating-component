@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Interactive rating component</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass:wght@400;700&display=swap');
+      </style>
+</head>
+<body>
+<div class="bg-[#141519] h-screen flex items-center justify-center ">
+    <div>
+        <div class="bg-[#1E252F] p-8 rounded-lg">
+            <div id="areavoto" class="flex flex-col gap-3 items-start">
+                <div class="rounded-full bg-[#233039] h-[40px] w-[40px] flex items-center justify-center">
+                    <img src="images/icon-star.svg" class="w-4 " alt="stella">
+                </div>
+                <h1 class="text-white text-2xl" >How did we do?</h1>
+                <p class="max-w-[380px] text-gray-500">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <div class="text-xl flex gap-[26px] w-full text-gray-500">
+                    <button id="voto" class="rounded-full h-[45px] w-[45px] bg-[#233039] text-center ">1</button>
+                    <button id="voto"class="rounded-full h-[45px] w-[45px] bg-[#233039] text-center ">2</button>
+                    <button id="voto"class="rounded-full h-[45px] w-[45px] bg-[#233039] text-center ">3</button>
+                    <button id="voto"class="rounded-full h-[45px] w-[45px] bg-[#233039] text-center ">4</button>
+                    <button id="voto"class="rounded-full h-[45px] w-[45px] bg-[#233039] text-center ">5</button>
+                </div>
+                <div class="w-full">
+                    <button id="Submit" class="text-white bg-orange-500 w-full p-2 rounded-full">Submit</button>
+                </div>
+            </div>
+
+            <div id="arearisultato" class="hidden text-center">
+                <div class="text-orange-400 rounded-full my-2 bg-[#233039]" >
+                    You selected <span id="selezionato"></span> out of 5
+                </div>
+                <h1 class="text-xl text-white font-bold">Thank you!</h1>
+                <p class="text-gray-500 max-w-[350px]">We appreaciate you taking the time tog ive a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
